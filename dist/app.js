@@ -1,14 +1,20 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 745:
+/***/ "./src/index.jsx":
+/*!***********************!*\
+  !*** ./src/index.jsx ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.all(/* import() */[__webpack_require__.e(613), __webpack_require__.e(793)]).then(__webpack_require__.bind(__webpack_require__, 793));
+Promise.all(/*! import() */[__webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("src_bootstrap_jsx")]).then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ "./src/bootstrap.jsx"));
 
 /***/ }),
 
-/***/ 932:
+/***/ "webpack/container/reference/remote":
+/*!*************************************************************************************************************************!*\
+  !*** external "remote@https://remote-165760h81-andrea-pinardis-projects.vercel.app/_next/static/chunks/remoteEntry.js" ***!
+  \*************************************************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -43,13 +49,16 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -212,18 +221,27 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/node module decorator */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nmd = (module) => {
+/******/ 			module.paths = [];
+/******/ 			if (!module.children) module.children = [];
+/******/ 			return module;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/remotes loading */
 /******/ 	(() => {
 /******/ 		var chunkMapping = {
-/******/ 			"26": [
-/******/ 				26
+/******/ 			"webpack_container_remote_remote_nextjs-remote-page": [
+/******/ 				"webpack/container/remote/remote/nextjs-remote-page"
 /******/ 			]
 /******/ 		};
 /******/ 		var idToExternalAndNameMapping = {
-/******/ 			"26": [
+/******/ 			"webpack/container/remote/remote/nextjs-remote-page": [
 /******/ 				"default",
 /******/ 				"./nextjs-remote-page",
-/******/ 				932
+/******/ 				"webpack/container/reference/remote"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.remotes = (chunkId, promises) => {
@@ -312,9 +330,9 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 			var promises = [];
 /******/ 			switch(name) {
 /******/ 				case "default": {
-/******/ 					register("react-dom", "18.2.0", () => (Promise.all([__webpack_require__.e(542), __webpack_require__.e(613)]).then(() => (() => (__webpack_require__(542))))));
-/******/ 					register("react", "18.2.0", () => (__webpack_require__.e(378).then(() => (() => (__webpack_require__(378))))));
-/******/ 					initExternal(932);
+/******/ 					register("react-dom", "18.2.0", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__(/*! ../node_modules/react-dom/index.js */ "../node_modules/react-dom/index.js"))))));
+/******/ 					register("react", "18.2.0", () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! ../node_modules/react/index.js */ "../node_modules/react/index.js"))))));
+/******/ 					initExternal("webpack/container/reference/remote");
 /******/ 				}
 /******/ 				break;
 /******/ 			}
@@ -484,16 +502,16 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		});
 /******/ 		var installedModules = {};
 /******/ 		var moduleToHandlerMapping = {
-/******/ 			613: () => (loadSingletonVersionCheckFallback("default", "react", [4,18,2,0], () => (__webpack_require__.e(378).then(() => (() => (__webpack_require__(378))))))),
-/******/ 			241: () => (loadSingletonVersionCheckFallback("default", "react-dom", [4,18,2,0], () => (__webpack_require__.e(542).then(() => (() => (__webpack_require__(542)))))))
+/******/ 			"webpack/sharing/consume/default/react/react": () => (loadSingletonVersionCheckFallback("default", "react", [4,18,2,0], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react-dom/react-dom": () => (loadSingletonVersionCheckFallback("default", "react-dom", [4,18,2,0], () => (__webpack_require__.e("vendors-node_modules_react-dom_index_js").then(() => (() => (__webpack_require__(/*! react-dom */ "../node_modules/react-dom/index.js")))))))
 /******/ 		};
 /******/ 		// no consumes in initial chunks
 /******/ 		var chunkMapping = {
-/******/ 			"613": [
-/******/ 				613
+/******/ 			"webpack_sharing_consume_default_react_react": [
+/******/ 				"webpack/sharing/consume/default/react/react"
 /******/ 			],
-/******/ 			"793": [
-/******/ 				241
+/******/ 			"src_bootstrap_jsx": [
+/******/ 				"webpack/sharing/consume/default/react-dom/react-dom"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.consumes = (chunkId, promises) => {
@@ -533,7 +551,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			143: 0
+/******/ 			"app": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
@@ -545,7 +563,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(!/^(26|613)$/.test(chunkId)) {
+/******/ 						if(/^(vendors\-node_modules_react(|\-dom)_index_js|app|src_bootstrap_jsx)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);
@@ -620,7 +638,7 @@ module.exports = new Promise((resolve, reject) => {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(745);
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.jsx");
 /******/ 	
 /******/ })()
 ;

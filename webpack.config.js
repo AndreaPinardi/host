@@ -20,7 +20,7 @@ module.exports = {
   },
 
   output: {
-    publicPath: 'auto',
+    publicPath: 'https://host-virid.vercel.app',
   },
 
   resolve: {
