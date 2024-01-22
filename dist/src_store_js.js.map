@@ -1,0 +1,1 @@
+{"version":3,"file":"src_store_js.js","mappings":";;;;;;;;;;;;;AAAO,MAAMA,KAAK,GAAG,OAAO","sources":["webpack://react-host-nextjs-remote_host/./src/store.js"],"sourcesContent":["export const store = \"store\""],"names":["store"],"sourceRoot":""}
