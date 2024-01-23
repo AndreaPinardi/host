@@ -12,16 +12,16 @@ Promise.all(/*! import() */[__webpack_require__.e("webpack_sharing_consume_defau
 /***/ }),
 
 /***/ "webpack/container/reference/remote":
-/*!*************************************************************************************************************************!*\
-  !*** external "remote@https://remote-165760h81-andrea-pinardis-projects.vercel.app/_next/static/chunks/remoteEntry.js" ***!
-  \*************************************************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** external "remote@https://remote-beige.vercel.app/_next/static/chunks/remoteEntry.js" ***!
+  \********************************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 var __webpack_error__ = new Error();
 module.exports = new Promise((resolve, reject) => {
 	if(typeof remote !== "undefined") return resolve();
-	__webpack_require__.l("https://remote-165760h81-andrea-pinardis-projects.vercel.app/_next/static/chunks/remoteEntry.js", (event) => {
+	__webpack_require__.l("https://remote-beige.vercel.app/_next/static/chunks/remoteEntry.js", (event) => {
 		if(typeof remote !== "undefined") return resolve();
 		var errorType = event && (event.type === 'load' ? 'missing' : event.type);
 		var realSrc = event && event.target && event.target.src;

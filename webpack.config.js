@@ -56,7 +56,7 @@ module.exports = {
       name: 'host',
       filename: 'remoteEntry.js',
       remotes: {
-        remote: "remote@https://remote-165760h81-andrea-pinardis-projects.vercel.app/_next/static/chunks/remoteEntry.js"
+        remote: "remote@https://remote-beige.vercel.app/_next/static/chunks/remoteEntry.js"
       },
       exposes: {
       },
